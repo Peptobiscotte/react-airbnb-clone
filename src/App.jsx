@@ -1,6 +1,10 @@
+import Navbar from "./components/Navbar"
+
 function App() {
   return (
-    <div>WIP</div>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 
