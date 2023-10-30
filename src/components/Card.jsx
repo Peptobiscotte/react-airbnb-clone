@@ -16,7 +16,7 @@ export default function Card(props) {
                 <div className="card--badge">{badgeText}</div>
             }
             <img 
-                src={`/cards/${props.coverImg}`} 
+                src={props.assetImg} 
                 className="card--image" 
             />
             <div className="card--stats">
