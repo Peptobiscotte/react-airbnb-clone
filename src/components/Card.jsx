@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+import star from "../assets/star.png"
 
 export default function Card(props) {
     let badgeText
@@ -16,11 +16,11 @@ export default function Card(props) {
                 <div className="card--badge">{badgeText}</div>
             }
             <img 
-                src={`/assets/${props.coverImg}`} 
+                src={`/cards/${props.coverImg}`} 
                 className="card--image" 
             />
             <div className="card--stats">
-                <img src="/assets/star.png" className="card--star" />
+                <img src={star} className="card--star" />
                 <span>{props.stats.rating}</span>
                 <span className="gray">({props.stats.reviewCount}) • </span>
                 <span className="gray">{props.location}</span>
